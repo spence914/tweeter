@@ -14,6 +14,16 @@ nav span {
   font-family: 'Bungee' , sans-serif;
 }
 
-nav a {  display: flex;
+
+
+nav .navbar-right{
+  display: flex;
   margin-left: auto;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+nav i{
+  color: red;
 }
