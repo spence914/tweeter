@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .new-tweet{
   display: flex;
   flex-direction: column;
@@ -44,6 +48,10 @@ border: none;
 resize: none;
 border-bottom: solid darkgrey;
 border-width: thick;
-background: transparent
+background: transparent;
+outline: none;
+}
 
+.red-text{
+  color: red;
 }
