@@ -1,0 +1,42 @@
+.new-tweet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+}
+
+.new-tweet h2{
+  text-align: center;
+}
+
+.new-tweet button{
+  background-color: #4056A1;
+}
+
+.new-tweet div{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-family: "Bungee";
+}
+.new-tweet form{
+  display: flex;
+  flex-direction: column;
+}
+
+.new-tweet label{
+  border-bottom: solid darkgray;
+  align-self: flex-start;
+  width: 100%;
+
+}
+
+
+.new-tweet textarea{
+display: block;
+margin-top: 10px;
+width: 100%;
+
+}
