@@ -7,6 +7,7 @@ article {
   border-width: thick;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -33,6 +34,7 @@ header .left {
 header .right {
   display: flex;
   flex-direction: row;
+  color: rgb(205, 206, 222);
 }
 
 article header img {
@@ -47,11 +49,23 @@ article footer {
   width: 90%;
   border-top: solid;
   border-width: thick;
+  font-size: 18px;
+}
 
+article footer i{
+  color: rgb(75, 85, 151);
+}
+
+.hover-color{
+  color: rgb(194, 154, 62)
 }
 
 article p {
   width: 90%;
   text-align: left;
   text-wrap: nowrap;
+}
+
+.box-shadow{
+  box-shadow: 10px 10px 0 rgb(201, 202, 224);
 }
