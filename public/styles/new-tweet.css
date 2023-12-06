@@ -33,11 +33,7 @@
   color: aliceblue;
 }
 
-.new-tweet label{
-  align-self: flex-start;
-  width: 100%;
 
-}
 
 
 .new-tweet textarea{

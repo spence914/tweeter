@@ -14,7 +14,6 @@ article {
 article header {
   background-color: #f4f1ec;
   background-image: none;
-  display: flex;
   flex-direction: row;
   width: 90%;
   height: fit-content;
@@ -25,16 +24,12 @@ article header {
 
 header .left {
   display: flex;
-  flex-direction: row;
   align-items: center;
   width: 200px;
   justify-content: space-between;
-  text-wrap: nowrap;
 }
 
 header .right {
-  display: flex;
-  flex-direction: row;
   color: rgb(205, 206, 222);
 }
 
@@ -63,7 +58,6 @@ article footer i{
 
 article p {
   width: 90%;
-  text-align: left;
   text-wrap: nowrap;
 }
 
