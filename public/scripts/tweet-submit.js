@@ -3,7 +3,9 @@ $(document).ready(function () {
   $("main section form").on("submit", function (event) {
     event.preventDefault();
 
-    const tweetText = $(this).serialize();
+    const tweetForm = $(this); // Store a reference to the form
+
+    const tweetText = tweetForm.serialize();
 
 
     if (tweetText.length === 5) {
@@ -28,6 +30,7 @@ $(document).ready(function () {
     $.post("/tweets/", tweetText)
       .done(function () {
         loadTweets();
+        tweetForm[0].reset();
       });
 
 
