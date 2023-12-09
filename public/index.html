@@ -32,6 +32,7 @@
   <script type="text/javascript" src="/scripts/tweet-hover.js"></script>
   <script type="text/javascript" src="/scripts/tweet-submit.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="/scripts/nav-behaviour.js"></script>
 
 </head>
 
@@ -60,7 +61,7 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <section class="new-tweet">
+    <section class="new-tweet hidden" id="new-tweet-form">
 
 
       <div class="error-message hidden">
@@ -71,7 +72,6 @@
 
 
 
-      <h2>Compose Tweet</h2>
       <form action="/tweets/" method="post">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
