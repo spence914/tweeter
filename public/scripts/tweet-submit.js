@@ -9,10 +9,17 @@ $(document).ready(function () {
 
 
     if (tweetText.length === 5) {
-      return alert("Tweets cannot be empty");
+      $('#error-message-content').text("Tweets cannot be empty");
+      $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
+      return;
+      // return alert("Tweets cannot be empty");
     } else if (tweetText.length > 145) {
-      return alert("Tweets cannot be longer than 140 characters");
+      $('#error-message-content').text("Tweets cannot be more than 140 characters");
+      $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
+      return;
     }
+
+    $('.error-message').slideUp().addClass('hidden');
 
     const renderNewTweet = function (tweet) {
       // calls createTweetElement for  tweet
