@@ -9,11 +9,15 @@ $(document).ready(function () {
 
 
     if (tweetText.length === 5) {
+      $('.error-message').slideUp();
+
       $('#error-message-content').text("Tweets cannot be empty");
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
       return;
       // return alert("Tweets cannot be empty");
     } else if (tweetText.length > 145) {
+      $('.error-message').slideUp();
+
       $('#error-message-content').text("Tweets cannot be more than 140 characters");
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
       return;
