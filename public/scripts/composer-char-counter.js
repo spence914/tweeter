@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $(".new-tweet textarea").on("input", function() {
+  $(".new-tweet textarea").on("input", function () {
     // .val() used to get or set value of form elements (input fields, select boxes, texareas)
     const charCount = $(this).val().length;
     const maxChars = 140;
@@ -20,6 +20,31 @@ $(document).ready(function () {
     // doing styling tasks. In this case the styling is still being done by the CSS so the separation of
     // responsibilities is maintained
     $(this).closest('.new-tweet').find('.counter').toggleClass('red-text', charsRemaining < 0);
-    
+
+  });
+
+  const pageAmountScrolled = 520;
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > pageAmountScrolled) {
+      $(".scroll-top").fadeIn().toggleClass('hidden');
+      $(".navbar-right").fadeOut().toggleClass('hidden');
+    } else {
+      $(".scroll-top").fadeOut().toggleClass('hidden');
+      $(".navbar-right").fadeIn().toggleClass('hidden');
+    }
+  });
+
+
+
+  $("button.scroll-top").on('click', function () {
+    // Animate scrolling to the top of the page
+    $('html, body').animate({ scrollTop: 0 }, function () {
+      // After scrolling, focus on the textarea
+      $('.new-tweet').slideDown(function () {
+        $('.new-tweet').toggleClass('hidden', false);
+        $('#tweet-text').focus();
+      });
+    });
   });
 });
