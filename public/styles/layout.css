@@ -36,3 +36,18 @@ body {
   background-color: #f4f1ec;
   align-items: center;
  }
+
+ .scroll-top{
+  display:block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  cursor: pointer;
+ }
