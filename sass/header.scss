@@ -1,0 +1,28 @@
+$primary-color: rgb(204, 154, 62);
+$background-pattern: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+$text-color: white;
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  background-color: $primary-color;
+  width: 100%;
+  background-image: $background-pattern;
+}
+
+header .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header img {
+  display: block;
+}
+
+header h2 {
+  text-align: center;
+  color: $text-color;
+}
