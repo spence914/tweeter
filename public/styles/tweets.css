@@ -55,8 +55,12 @@ article footer i{
 .hover-color{
   color: rgb(194, 154, 62)
 }
-
 article p {
+  width: 90%;
+  text-wrap: wrap;
+}
+
+.tweet footer {
   width: 90%;
   text-wrap: nowrap;
 }
