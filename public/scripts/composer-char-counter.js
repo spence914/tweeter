@@ -23,7 +23,22 @@ $(document).ready(function () {
 
   });
 
-  const pageAmountScrolled = 520;
+  let pageAmountScrolled = 520;
+
+  $(window).resize(function () {
+    // Get the current viewport width
+    const viewportWidth = $(window).width();
+
+    // Update the threshold based on the viewport width
+    if (viewportWidth < 1024) {
+      pageAmountScrolled = 520;
+    } else {
+      pageAmountScrolled = 256;
+    }
+  });
+
+  $(window).resize();
+
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > pageAmountScrolled) {
