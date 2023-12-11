@@ -88,4 +88,13 @@ body div{}
   #tweets-container header{
     width: inherit
   }
+
+  #new-tweet-form{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  #tweets-container article{
+    margin-top: 0;
+  }
  }
