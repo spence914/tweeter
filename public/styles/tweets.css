@@ -58,6 +58,7 @@ article footer i{
 article p {
   width: 90%;
   text-wrap: wrap;
+  word-wrap: break-word;
 }
 
 .tweet footer {

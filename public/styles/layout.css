@@ -82,6 +82,7 @@ body div{}
 
   #tweet-text{
     text-wrap: wrap;
+    word-wrap: break-word;
   }
 
   #tweets-container header{
