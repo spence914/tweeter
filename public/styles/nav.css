@@ -8,18 +8,15 @@ nav {
   align-items: center;
   position: fixed;
 }
-
 nav span {
   font-family: "Bungee", sans-serif;
 }
-
 nav .navbar-right {
   display: flex;
   margin-left: auto;
   flex-direction: column;
   align-items: center;
 }
-
 nav button {
   background: none;
   border: none;
@@ -28,7 +25,6 @@ nav button {
   cursor: pointer;
   color: #FFFFFF;
 }
-
 nav i {
   color: red;
   cursor: pointer;

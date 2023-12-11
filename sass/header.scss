@@ -9,20 +9,20 @@ header {
   background-color: $primary-color;
   width: 100%;
   background-image: $background-pattern;
-}
 
-header .avatar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
-header img {
-  display: block;
-}
+  img {
+    display: block;
+  }
 
-header h2 {
-  text-align: center;
-  color: $text-color;
+  h2 {
+    text-align: center;
+    color: $text-color;
+  }
 }

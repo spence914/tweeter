@@ -19,11 +19,11 @@
   #tweets-container header {
     width: inherit;
   }
+  #tweets-container article {
+    margin-top: 0;
+  }
   #new-tweet-form {
     margin-top: 0;
     margin-bottom: 20px;
-  }
-  #tweets-container article {
-    margin-top: 0;
   }
 }

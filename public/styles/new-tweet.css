@@ -5,15 +5,13 @@
   width: 90%;
   margin-top: 20px;
 }
-
 .new-tweet h2 {
   text-align: center;
 }
-
 .new-tweet button {
   background-color: #4056A1;
+  color: aliceblue;
 }
-
 .new-tweet div {
   display: flex;
   align-items: flex-end;
@@ -21,16 +19,10 @@
   margin-top: 10px;
   font-family: "Bungee";
 }
-
 .new-tweet form {
   display: flex;
   flex-direction: column;
 }
-
-.new-tweet button {
-  color: aliceblue;
-}
-
 .new-tweet textarea {
   display: block;
   margin-top: 10px;
@@ -42,11 +34,6 @@
   background: transparent;
   outline: none;
 }
-
-.red-text {
-  color: red;
-}
-
 .new-tweet .error-message {
   display: flex;
   border: solid red;
@@ -55,15 +42,17 @@
   justify-content: space-around;
   color: red;
 }
-
 .new-tweet .hidden {
   display: none;
+}
+.new-tweet i {
+  color: red;
+}
+
+.red-text {
+  color: red;
 }
 
 .hidden {
   display: none;
-}
-
-.new-tweet i {
-  color: red;
 }

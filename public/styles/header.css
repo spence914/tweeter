@@ -6,18 +6,15 @@ header {
   width: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
-
 header .avatar {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-
 header img {
   display: block;
 }
-
 header h2 {
   text-align: center;
   color: white;

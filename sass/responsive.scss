@@ -18,14 +18,17 @@ $primary-background-color: rgb(62, 85, 156);
     text-wrap: wrap;
     word-wrap: break-word;
   }
-  #tweets-container header {
+  #tweets-container {
+    header{
     width: inherit;
+  }
+  article {
+    margin-top: 0;
+  }
   }
   #new-tweet-form {
     margin-top: 0;
     margin-bottom: 20px;
   }
-  #tweets-container article {
-    margin-top: 0;
-  }
+
 }

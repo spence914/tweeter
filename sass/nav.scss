@@ -3,42 +3,37 @@ $nav-icon-color: red;
 $base-font-family: 'Bungee' , sans-serif;
 
 nav {
-height: 120px;
-width: 100vw;
-color: $primary-color;
-padding-left: 1.5em;
-padding-right: 1.5em;
-display: flex;
-align-items: center;
-position: fixed;
-
-}
-
-nav span {
-  font-family: $base-font-family;
-}
-
-
-
-nav .navbar-right{
-  display: flex;
-  margin-left: auto;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-nav button{
-  background:none;
-  border:none;
-  margin:0;
-  padding:0;
-  cursor: pointer;
+  height: 120px;
+  width: 100vw;
   color: $primary-color;
-}
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  align-items: center;
+  position: fixed;
 
+  span {
+    font-family: $base-font-family;
+  }
 
-nav i{
-  color: $nav-icon-color;
-  cursor: pointer;
+  .navbar-right {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: $primary-color;
+  }
+
+  i {
+    color: $nav-icon-color;
+    cursor: pointer;
+  }
 }
