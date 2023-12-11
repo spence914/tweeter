@@ -56,6 +56,7 @@ outline: none;
 .new-tweet .error-message{
   display: flex;
   border: solid red;
+  border-width: thick;
   align-items: center;
   justify-content: space-around;
   color: red;
