@@ -6,17 +6,18 @@ $(document).ready(function () {
     const tweetForm = $(this); // Store a reference to the form
 
     const tweetText = tweetForm.serialize();
+    const tweetTextFormatted = tweetForm.find('textarea[name="text"]').val();
 
-
-    if (tweetText.length === 5) {
+    if (tweetTextFormatted.length === 0) {
       $('.error-message').slideUp();
 
       $('#error-message-content').text("Tweets cannot be empty");
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
       return;
       // return alert("Tweets cannot be empty");
-    } else if (tweetText.length > 145) {
-      $('.error-message').slideUp();
+    } else if (tweetTextFormatted.length > 140) {
+
+      $('.error-message').slideUp().addClass('hidden');
 
       $('#error-message-content').text("Tweets cannot be more than 140 characters");
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
