@@ -1,7 +1,13 @@
+$primary-background-color: #f4f1ec;
+$tweet-header-right-text-color: rgb(205, 206, 222);
+$tweet-footer-icon-color: rgb(75, 85, 151);
+$hover-color: rgb(194, 154, 62);
+$box-shadow-color: rgb(201, 202, 224);
+
 article {
   display: flex;
   flex-direction: column;
-  background-color: #f4f1ec;
+  background-color: $primary-background-color;
   width: 90%;
   border: solid;
   border-width: thick;
@@ -12,7 +18,7 @@ article {
 }
 
 article header {
-  background-color: #f4f1ec;
+  background-color: $primary-background-color;
   background-image: none;
   flex-direction: row;
   width: 90%;
@@ -29,7 +35,7 @@ header .left {
 }
 
 header .right {
-  color: rgb(205, 206, 222);
+  color: $tweet-header-right-text-color;
 }
 
 article header img {
@@ -49,11 +55,11 @@ article footer {
 }
 
 article footer i{
-  color: rgb(75, 85, 151);
+  color: $tweet-footer-icon-color;
 }
 
 .hover-color{
-  color: rgb(194, 154, 62)
+  color: $hover-color
 }
 article p {
   width: 90%;
@@ -67,7 +73,7 @@ article p {
 }
 
 .box-shadow{
-  box-shadow: 10px 10px 0 rgb(201, 202, 224);
+  box-shadow: 10px 10px 0 $box-shadow-color;
 }
 
 #tweets-container{

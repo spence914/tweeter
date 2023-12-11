@@ -1,6 +1,7 @@
-*{
-  box-sizing: border-box;
-}
+$new-tweet-button-background-color: #4056A1;
+$new-tweet-font-family: "Bungee";
+$new-tweet-button-text-color: aliceblue;
+$highlight-color: red;
 
 .new-tweet{
   display: flex;
@@ -16,7 +17,7 @@
 }
 
 .new-tweet button{
-  background-color: #4056A1;
+  background-color: $new-tweet-button-background-color;
 }
 
 .new-tweet div{
@@ -24,14 +25,14 @@
   align-items: flex-end;
   justify-content: space-between;
   margin-top: 10px;
-  font-family: "Bungee";
+  font-family: $new-tweet-font-family;
 }
 .new-tweet form{
   display: flex;
   flex-direction: column;
 }
 .new-tweet button{
-  color: aliceblue;
+  color: $new-tweet-button-text-color;
 }
 
 
@@ -50,16 +51,16 @@ outline: none;
 }
 
 .red-text{
-  color: red;
+  color: $highlight-color;
 }
 
 .new-tweet .error-message{
   display: flex;
-  border: solid red;
+  border: solid $highlight-color;
   border-width: thick;
   align-items: center;
   justify-content: space-around;
-  color: red;
+  color: $highlight-color;
   
 }
 
@@ -72,5 +73,5 @@ outline: none;
 }
 
 .new-tweet i {
-  color: red;
+  color: $highlight-color;
 }

@@ -1,6 +1,8 @@
+$primary-background-color: rgb(62, 85, 156);
+
 @media only screen and (min-width: 1024px) {
   nav {
-    background-color: rgb(62, 85, 156);
+    background-color: $primary-background-color;
   }
   .main-content {
     flex-direction: row;

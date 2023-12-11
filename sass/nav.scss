@@ -1,7 +1,11 @@
+$primary-color: #FFFFFF;
+$nav-icon-color: red;
+$base-font-family: 'Bungee' , sans-serif;
+
 nav {
 height: 120px;
 width: 100vw;
-color: #FFFFFF;
+color: $primary-color;
 padding-left: 1.5em;
 padding-right: 1.5em;
 display: flex;
@@ -11,7 +15,7 @@ position: fixed;
 }
 
 nav span {
-  font-family: 'Bungee' , sans-serif;
+  font-family: $base-font-family;
 }
 
 
@@ -30,11 +34,11 @@ nav button{
   margin:0;
   padding:0;
   cursor: pointer;
-  color: white;
+  color: $primary-color;
 }
 
 
 nav i{
-  color: red;
+  color: $nav-icon-color;
   cursor: pointer;
 }
