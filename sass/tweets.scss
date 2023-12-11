@@ -54,13 +54,14 @@ article footer {
   font-size: 18px;
 }
 
-article footer i{
+article footer i {
   color: $tweet-footer-icon-color;
 }
 
-.hover-color{
+.hover-color {
   color: $hover-color
 }
+
 article p {
   width: 90%;
   text-wrap: wrap;
@@ -72,11 +73,11 @@ article p {
   text-wrap: nowrap;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: 10px 10px 0 $box-shadow-color;
 }
 
-#tweets-container{
+#tweets-container {
   display: flex;
   flex-direction: column;
   width: 100%;

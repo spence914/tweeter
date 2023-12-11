@@ -3,23 +3,23 @@ $new-tweet-font-family: "Bungee";
 $new-tweet-button-text-color: aliceblue;
 $highlight-color: red;
 
-.new-tweet{
+.new-tweet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 90%;
   margin-top: 20px;
 
-  h2{
+  h2 {
     text-align: center;
   }
 
-  button{
+  button {
     background-color: $new-tweet-button-background-color;
     color: $new-tweet-button-text-color;
   }
 
-  div{
+  div {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -27,49 +27,49 @@ $highlight-color: red;
     font-family: $new-tweet-font-family;
   }
 
-  form{
+  form {
     display: flex;
     flex-direction: column;
   }
 
-  textarea{
+  textarea {
     display: block;
     margin-top: 10px;
     width: 100%;
     border: none;
     resize: none;
-    border-bottom: solid ;
+    border-bottom: solid;
     border-width: thick;
     background: transparent;
     outline: none;
-    }
+  }
 
-    .error-message{
-      display: flex;
-      border: solid $highlight-color;
-      border-width: thick;
-      align-items: center;
-      justify-content: space-around;
-      color: $highlight-color;
-      
-    }
+  .error-message {
+    display: flex;
+    border: solid $highlight-color;
+    border-width: thick;
+    align-items: center;
+    justify-content: space-around;
+    color: $highlight-color;
 
-    .hidden{
-      display: none;
-    }
+  }
 
-    i {
-      color: $highlight-color;
-    }
+  .hidden {
+    display: none;
+  }
+
+  i {
+    color: $highlight-color;
+  }
 }
 
 
 
-.red-text{
+.red-text {
   color: $highlight-color;
 }
 
 
-.hidden{
+.hidden {
   display: none;
 }

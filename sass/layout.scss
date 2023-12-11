@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,12 +17,12 @@ html {
  * Global layout stuff
  */
 
- $primary-background-color: #f4f1ec;
- $text-color: #545149;
- $scroll-top-button-color: red;
- $scroll-top-button-text-color: white;
- $base-font-size: 24px;
- $base-font-family: "Source Sans 3", sans-serif;
+$primary-background-color: #f4f1ec;
+$text-color: #545149;
+$scroll-top-button-color: red;
+$scroll-top-button-text-color: white;
+$base-font-size: 24px;
+$base-font-family: "Source Sans 3", sans-serif;
 
 
 
@@ -39,16 +42,16 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+main {
   display: flex;
   flex-direction: column;
   width: 90%;
   background-color: $primary-background-color;
   align-items: center;
- }
+}
 
- .scroll-top{
-  display:block;
+.scroll-top {
+  display: block;
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -61,15 +64,11 @@ body {
   bottom: 20px;
   z-index: 999;
   cursor: pointer;
- }
+}
 
- .main-content{
+.main-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
- }
-
-
-
-
+}

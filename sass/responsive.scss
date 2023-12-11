@@ -4,28 +4,34 @@ $primary-background-color: rgb(62, 85, 156);
   nav {
     background-color: $primary-background-color;
   }
+
   .main-content {
     flex-direction: row;
     margin-top: 200px;
     align-items: flex-start;
   }
+
   #site-header {
     max-height: 400px;
     max-width: 400px;
     margin-left: 50px;
   }
+
   #tweet-text {
     text-wrap: wrap;
     word-wrap: break-word;
   }
+
   #tweets-container {
-    header{
-    width: inherit;
+    header {
+      width: inherit;
+    }
+
+    article {
+      margin-top: 0;
+    }
   }
-  article {
-    margin-top: 0;
-  }
-  }
+
   #new-tweet-form {
     margin-top: 0;
     margin-bottom: 20px;
