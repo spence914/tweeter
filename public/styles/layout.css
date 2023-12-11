@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -13,32 +14,29 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   display: flex;
   flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans 3' , sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   align-items: center;
 }
-
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- main {
+main {
   display: flex;
   flex-direction: column;
   width: 90%;
   background-color: #f4f1ec;
   align-items: center;
- }
+}
 
- .scroll-top{
-  display:block;
+.scroll-top {
+  display: block;
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -50,49 +48,11 @@ body {
   bottom: 20px;
   z-index: 999;
   cursor: pointer;
- }
+}
 
- .main-content{
+.main-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
- }
-
- @media only screen and (min-width: 1024px) {
-
-  nav{
-    background-color: rgb(69, 85, 156);
-  }
-
-  .main-content{
-    flex-direction: row;
-    margin-top: 200px;
-    align-items: flex-start;
-  }
-
-  #site-header{
-    max-height: 400px;
-    max-width: 400px;
-    margin-left: 50px;
-  }
-
-
-  #tweet-text{
-    text-wrap: wrap;
-    word-wrap: break-word;
-  }
-
-  #tweets-container header{
-    width: inherit
-  }
-
-  #new-tweet-form{
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-  #tweets-container article{
-    margin-top: 0;
-  }
- }
+}

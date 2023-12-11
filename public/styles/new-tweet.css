@@ -1,73 +1,70 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-.new-tweet{
+.new-tweet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 90%;
   margin-top: 20px;
-
 }
 
-.new-tweet h2{
+.new-tweet h2 {
   text-align: center;
 }
 
-.new-tweet button{
+.new-tweet button {
   background-color: #4056A1;
+  color: aliceblue;
+
 }
 
-.new-tweet div{
+.new-tweet div {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-top: 10px;
   font-family: "Bungee";
 }
-.new-tweet form{
+
+.new-tweet form {
   display: flex;
   flex-direction: column;
 }
-.new-tweet button{
-  color: aliceblue;
+
+
+
+.new-tweet textarea {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  resize: none;
+  border-bottom: solid;
+  border-width: thick;
+  background: transparent;
+  outline: none;
 }
 
-
-
-
-.new-tweet textarea{
-display: block;
-margin-top: 10px;
-width: 100%;
-border: none;
-resize: none;
-border-bottom: solid ;
-border-width: thick;
-background: transparent;
-outline: none;
-}
-
-.red-text{
+.red-text {
   color: red;
 }
 
-.new-tweet .error-message{
+.new-tweet .error-message {
   display: flex;
   border: solid red;
   border-width: thick;
   align-items: center;
   justify-content: space-around;
   color: red;
-  
 }
 
-.new-tweet .hidden{
+.new-tweet .hidden {
   display: none;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
