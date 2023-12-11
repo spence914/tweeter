@@ -1,0 +1,29 @@
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: rgb(62, 85, 156);
+  }
+  .main-content {
+    flex-direction: row;
+    margin-top: 200px;
+    align-items: flex-start;
+  }
+  #site-header {
+    max-height: 400px;
+    max-width: 400px;
+    margin-left: 50px;
+  }
+  #tweet-text {
+    text-wrap: wrap;
+    word-wrap: break-word;
+  }
+  #tweets-container header {
+    width: inherit;
+  }
+  #new-tweet-form {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  #tweets-container article {
+    margin-top: 0;
+  }
+}
