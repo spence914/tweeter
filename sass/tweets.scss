@@ -15,58 +15,63 @@ article {
   margin-top: 20px;
   margin-bottom: 20px;
 
+  header {
+    background-color: $primary-background-color;
+    background-image: none;
+    flex-direction: row;
+    width: 90%;
+    height: fit-content;
+    justify-content: space-between;
+    margin-top: 0;
+
+    img {
+      height: 55px;
+      width: 55px;
+      margin-right: 10px;
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border-top: solid;
+    border-width: thick;
+    font-size: 18px;
+
+    i {
+      color: $tweet-footer-icon-color;
+    }
+  }
+
+  p {
+    width: 90%;
+    text-wrap: wrap;
+    word-wrap: break-word;
+  }
 }
 
-article header {
-  background-color: $primary-background-color;
-  background-image: none;
-  flex-direction: row;
-  width: 90%;
-  height: fit-content;
-  justify-content: space-between;
-  margin-top: 0;
 
+
+header {
+  .left {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+
+  .right {
+    color: $tweet-header-right-text-color;
+  }
 }
 
-header .left {
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
 
-header .right {
-  color: $tweet-header-right-text-color;
-}
-
-article header img {
-  height: 55px;
-  width: 55px;
-  margin-right: 10px;
-}
-
-article footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  border-top: solid;
-  border-width: thick;
-  font-size: 18px;
-}
-
-article footer i {
-  color: $tweet-footer-icon-color;
-}
 
 .hover-color {
   color: $hover-color
 }
 
-article p {
-  width: 90%;
-  text-wrap: wrap;
-  word-wrap: break-word;
-}
 
 .tweet footer {
   width: 90%;
