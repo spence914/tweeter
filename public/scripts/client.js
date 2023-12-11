@@ -90,9 +90,9 @@ const createTweetElement = function (tweet) {
   </div>
   </header>
 
-  <p>${escape(tweet.content.text)}</p>
+  <p id="tweet-text">${escape(tweet.content.text)}</p>
 
-  <footer>
+  <footer id="tweet-footer>
     <div class="left">
       <p>${timeago.format(tweet.created_at)}</p>
     </div>
