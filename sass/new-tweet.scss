@@ -46,11 +46,14 @@ $highlight-color: red;
 
   .error-message {
     display: flex;
+    text-align: center;
     border: solid $highlight-color;
     border-width: thick;
     align-items: center;
     justify-content: space-around;
     color: $highlight-color;
+    margin: 0;
+    padding: 0;
 
   }
 
