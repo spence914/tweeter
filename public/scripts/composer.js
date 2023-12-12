@@ -31,6 +31,7 @@ $(document).ready(function () {
 
     // Update the threshold based on the viewport width
     if (viewportWidth < 1024) {
+      // Rename to showScrollTopAt
       pageAmountScrolled = 520;
     } else {
       pageAmountScrolled = 256;
@@ -42,10 +43,10 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > pageAmountScrolled) {
-      $(".scroll-top").fadeIn().toggleClass('hidden');
+      $(".scroll-top").fadeIn();
       $(".navbar-right").fadeOut().toggleClass('hidden');
     } else {
-      $(".scroll-top").fadeOut().toggleClass('hidden');
+      $(".scroll-top").fadeOut();
       $(".navbar-right").fadeIn().toggleClass('hidden');
     }
   });
