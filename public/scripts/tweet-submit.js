@@ -11,16 +11,16 @@ $(document).ready(function () {
     if (tweetTextFormatted.length === 0) {
       $('.error-message').slideUp();
 
-      $('#error-message-content').text("Tweets cannot be empty");
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
+      $('#error-message-content').text("Tweets cannot be empty");
       return;
       // return alert("Tweets cannot be empty");
     } else if (tweetTextFormatted.length > 140) {
 
       $('.error-message').slideUp().addClass('hidden');
 
-      $('#error-message-content').text("Tweets cannot be more than 140 characters");
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
+      $('#error-message-content').text("Tweets cannot be more than 140 characters");
       return;
     }
 
