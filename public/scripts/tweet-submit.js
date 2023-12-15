@@ -8,19 +8,18 @@ $(document).ready(function () {
     const tweetText = tweetForm.serialize();
     const tweetTextFormatted = tweetForm.find('textarea[name="text"]').val();
 
-    if (tweetTextFormatted.length === 0) {
+    let throwTweetSubmitError = function (message) {
       $('.error-message').slideUp();
-
       $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
-      $('#error-message-content').text("Tweets cannot be empty");
+      $('#error-message-content').text(message);
+    };
+
+    if (tweetTextFormatted.length === 0) {
+      throwTweetSubmitError("Tweets cannot be empty");
       return;
       // return alert("Tweets cannot be empty");
     } else if (tweetTextFormatted.length > 140) {
-
-      $('.error-message').slideUp().addClass('hidden');
-
-      $('.error-message').slideDown().css('display', 'flex').removeClass('hidden');
-      $('#error-message-content').text("Tweets cannot be more than 140 characters");
+      throwTweetSubmitError("Tweets must have fewer than 140 characters");
       return;
     }
 
@@ -33,7 +32,7 @@ $(document).ready(function () {
       $('#tweets-container').prepend(newTweet);
     };
 
-    const loadTweets = function () {
+    const loadNewTweet = function () {
       $.get("/tweets/", function (response) {
         renderNewTweet(response[response.length - 1]);
       });
@@ -41,7 +40,7 @@ $(document).ready(function () {
 
     $.post("/tweets/", tweetText)
       .done(function () {
-        loadTweets();
+        loadNewTweet();
         tweetForm[0].reset();
       });
 
