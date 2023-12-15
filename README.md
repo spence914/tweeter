@@ -30,6 +30,6 @@ a 'scroll-to-top' button that only appears once the tweet submission form has be
 
 ## Screenshots
 
-! ["Screenshot of desktop view of tweeter"](https://github.com/spence914/tweeter/blob/main/docs/tweeter-desktop-view.png?raw=true)
-! ["Screenshot of mobile view of tweeter"](https://github.com/spence914/tweeter/blob/main/docs/tweeter-mobile-view.png?raw=true)
-! ["Screenshot of tweet submission form"](https://github.com/spence914/tweeter/blob/main/docs/tweet-submission-form.png?raw=true)
+!["Screenshot of desktop view of tweeter"](https://github.com/spence914/tweeter/blob/main/docs/tweeter-desktop-view.png?raw=true)
+!["Screenshot of mobile view of tweeter"](https://github.com/spence914/tweeter/blob/main/docs/tweeter-mobile-view.png?raw=true)
+!["Screenshot of tweet submission form"](https://github.com/spence914/tweeter/blob/main/docs/tweet-submission-form.png?raw=true)
