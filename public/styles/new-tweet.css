@@ -43,7 +43,7 @@
   justify-content: space-around;
   color: red;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 .new-tweet .hidden {
   display: none;
