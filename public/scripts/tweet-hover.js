@@ -1,22 +1,22 @@
 $(document).ready(function () {
   $(document).on({
     mouseenter: function () {
-      // Code to run when mouse enters the element
+      // Show box shadow when mouse enters the element
       $(this).toggleClass('box-shadow', true);
     },
     mouseleave: function () {
-      // Code to run when mouse leaves the element
+      // Hide box shadow when mouse leaves the element
       $(this).toggleClass('box-shadow', false);
     }
   }, "article");
 
   $(document).on({
     mouseenter: function () {
-      // Code to run when mouse enters the element
+      // Change to hover color when mouse enters the element
       $(this).toggleClass('hover-color', true);
     },
     mouseleave: function () {
-      // Code to run when mouse leaves the element
+      // Change back to regular color when mouse leaves the element
       $(this).toggleClass('hover-color', false);
     }
   }, "article i");

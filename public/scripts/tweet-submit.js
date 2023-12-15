@@ -1,11 +1,16 @@
 $(document).ready(function () {
 
   $("main section form").on("submit", function (event) {
+    //Prevent page reload on submission
     event.preventDefault();
 
-    const tweetForm = $(this); // Store a reference to the form
+    // Store a reference to the form
+    const tweetForm = $(this);
 
+    //Encode form elements as a string for submission
     const tweetText = tweetForm.serialize();
+
+    // Use actual value of form text for character counting
     const tweetTextFormatted = tweetForm.find('textarea[name="text"]').val();
 
     let throwTweetSubmitError = function (message) {
@@ -17,7 +22,6 @@ $(document).ready(function () {
     if (tweetTextFormatted.length === 0) {
       throwTweetSubmitError("Tweets cannot be empty");
       return;
-      // return alert("Tweets cannot be empty");
     } else if (tweetTextFormatted.length > 140) {
       throwTweetSubmitError("Tweets must have fewer than 140 characters");
       return;
@@ -26,7 +30,7 @@ $(document).ready(function () {
     $('.error-message').slideUp().addClass('hidden');
 
     const renderNewTweet = function (tweet) {
-      // calls createTweetElement for  tweet
+      // calls createTweetElement for new tweet
       let newTweet = createTweetElement(tweet);
       // takes return value and appends it to the tweets container
       $('#tweets-container').prepend(newTweet);
@@ -41,6 +45,7 @@ $(document).ready(function () {
     $.post("/tweets/", tweetText)
       .done(function () {
         loadNewTweet();
+        // reset text in tweet form upon submission
         tweetForm[0].reset();
       });
 

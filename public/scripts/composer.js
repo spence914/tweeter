@@ -11,38 +11,32 @@ $(document).ready(function () {
     // .find() traverses back down until it finds specified class or element
     $(this).closest('.new-tweet').find('.counter').text(charsRemaining);
 
-    // toggelClass takes two arguments, a class to toggle on/off, and an expression or boolean value that equates
-    // to truthy or falsy, if truthy the specified class toggles on, and if false it toggles off
-    // here the class is toggled on when there are no characters remaining
 
-    // note the same effect could have been established with an if statement checking whether remainingChars was
-    // over 0 and if not using .css('color', 'red') method on the counter element however then we have js
-    // doing styling tasks. In this case the styling is still being done by the CSS so the separation of
-    // responsibilities is maintained
     $(this).closest('.new-tweet').find('.counter').toggleClass('red-text', charsRemaining < 0);
 
   });
 
-  let pageAmountScrolled = 520;
+  let showScrollTopAt = 520;
 
+
+  //Function to determine what threshold to show scroll to top button
+  // 520px down for mobile view, 256px down for desktop view
   $(window).resize(function () {
-    // Get the current viewport width
     const viewportWidth = $(window).width();
 
-    // Update the threshold based on the viewport width
     if (viewportWidth < 1024) {
-      // Rename to showScrollTopAt
-      pageAmountScrolled = 520;
+      showScrollTopAt = 520;
     } else {
-      pageAmountScrolled = 256;
+      showScrollTopAt = 256;
     }
   });
 
   $(window).resize();
 
 
+  //Hides and shows scroll to top button, and navbar 'write a new tweet' button when scroll threshold is met
   $(window).scroll(function () {
-    if ($(window).scrollTop() > pageAmountScrolled) {
+    if ($(window).scrollTop() > showScrollTopAt) {
       $(".scroll-top").fadeIn();
       $(".navbar-right").fadeOut().toggleClass('hidden');
     } else {
