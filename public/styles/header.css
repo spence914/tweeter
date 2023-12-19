@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  height: 520px;
+  height: 400px;
   background-color: rgb(204, 154, 62);
   width: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
