@@ -25,9 +25,9 @@ $(document).ready(function () {
     const viewportWidth = $(window).width();
 
     if (viewportWidth < 1024) {
-      showScrollTopAt = 520;
+      showScrollTopAt = 400;
     } else {
-      showScrollTopAt = 256;
+      showScrollTopAt = 240;
     }
   });
 
