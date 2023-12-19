@@ -7,7 +7,7 @@ and displayed above the older tweets.
 
 The page features responsive design elements and is desigend to look good on both mobile and desktop.
 
-I have also implemented several strech features including a toggle for displaying and hiding the tweet submission form,
+I have also implemented several stretch features including a toggle for displaying and hiding the tweet submission form,
 a 'scroll-to-top' button that only appears once the tweet submission form has been scrolled past, and SASS driven CSS.
 
 ## Getting Started
