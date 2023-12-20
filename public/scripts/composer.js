@@ -18,6 +18,17 @@ $(document).ready(function () {
     if (charsRemaining >= 0 && charCount !== 0) {
       $('.error-message').slideUp();
     }
+
+
+    // Function to resize tweet input area based on size of text in textarea
+    const autoResize = function() {
+      const textarea = $('#tweet-text');
+      // sets the number of rows in the textarea to the number of newline charcters therein, effectively
+      // resizing it vertically to fit its contents
+      textarea.attr('rows', textarea.val().split('\n').length);
+    };
+
+    autoResize();
   });
 
   let showScrollTopAt = 520;
