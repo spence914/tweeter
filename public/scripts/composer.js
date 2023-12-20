@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     $(this).closest('.new-tweet').find('.counter').toggleClass('red-text', charsRemaining < 0);
 
-    // Hide error message if correct character count is in input field
+    // Hide error message if valid character count is in input field
     if (charsRemaining >= 0 && charCount !== 0) {
       $('.error-message').slideUp();
     }
