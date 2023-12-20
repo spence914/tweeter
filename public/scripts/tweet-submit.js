@@ -47,6 +47,8 @@ $(document).ready(function () {
         loadNewTweet();
         // reset text in tweet form upon submission
         tweetForm[0].reset();
+        // reset counter on submission
+        $(".counter").text("140");
       });
 
 
