@@ -20,6 +20,7 @@ $primary-background-color: rgb(62, 85, 156);
   #tweet-text {
     text-wrap: wrap;
     word-wrap: break-word;
+    overflow-wrap: anywhere;
   }
 
   #tweets-container {
